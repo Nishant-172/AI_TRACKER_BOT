@@ -1,2 +1,44 @@
 <!-- html code starts here -->
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Productivity Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Productivity Tracker</h1>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </header>
+
+    <section class="task-manager">
+      <h2>Manage Your Tasks</h2>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter a task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </section>
+
+    <section class="pomodoro-timer">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+      <button id="start-timer">Start</button>
+      <button id="reset-timer">Reset</button>
+    </section>
+
+    <section class="insights">
+      <h2>Daily Insights</h2>
+      <div id="insights-content">
+        <p>Complete tasks to see your insights here!</p>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
