@@ -64,3 +64,40 @@ button:hover {
 #custom-time button:hover {
   background-color: #218838;
 }
+
+/* Tasks Section */
+.tasks {
+  margin-top: 30px;
+}
+
+.tasks h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.tasks input {
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 120px);
+  margin-right: 10px;
+}
+
+.tasks button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#task-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+}
