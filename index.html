@@ -3,35 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Productivity Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Smart Productivity Tracker</h1>
-      <button id="toggle-theme">🌙 Dark Mode</button>
+      <h1>Pomodoro Timer</h1>
     </header>
-    <section class="task-manager">
-      <h2>Manage Your Tasks</h2>
-      <form id="task-form">
-        <input type="text" id="task-input" placeholder="Enter a task" required>
-        <button type="submit">Add Task</button>
-      </form>
-      <ul id="task-list"></ul>
-    </section>
     <section class="pomodoro-timer">
-      <h2>Pomodoro Timer</h2>
       <div id="timer">
         <span id="minutes">25</span>:<span id="seconds">00</span>
       </div>
       <button id="start-timer">Start</button>
       <button id="reset-timer">Reset</button>
-    </section>
-    <section class="insights">
-      <h2>Daily Insights</h2>
-      <div id="insights-content">
-        <p>Complete tasks to see your insights here!</p>
+      <button id="custom-time-btn">Select Custom Time</button> <!-- Custom Time Button -->
+      <div id="custom-time" class="hidden"> <!-- Hidden by default -->
+        <input type="number" id="custom-minutes" placeholder="Minutes" min="1">
+        <button id="set-time">Set Time</button>
       </div>
     </section>
   </div>
