@@ -1,3 +1,4 @@
+// js starts here
 // Select elements
 const taskForm = document.getElementById('task-form');
 const taskInput = document.getElementById('task-input');
