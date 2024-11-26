@@ -1,104 +1,66 @@
-/* Reset styling for consistent look */
+/* General Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif; /* Font select kiya */
-  background-color: #f4f4f9; /* Default light mode background */
-  color: #333; /* Default light mode text color */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-/* Container styling */
+/* Container */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 50px auto;
   padding: 20px;
-  background: #ffffff; /* Default light mode container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light mode shadow */
-  border-radius: 8px; /* Rounded corners for modern UI */
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Header styling */
-header {
-  display: flex;
-  justify-content: space-between; /* Header ke items alag alag corner pe */
-  align-items: center;
-  margin-bottom: 20px;
+/* Timer Display */
+#timer {
+  font-size: 3rem;
+  margin: 20px 0;
 }
 
-/* Button styling */
+/* Buttons */
 button {
   padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+  margin: 5px;
   font-size: 16px;
-  border-radius: 5px; /* Button rounded for a modern look */
-  background-color: #007bff; /* Default light mode button color */
-  color: #ffffff; /* White text */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
-/* Input and Form Styling */
-input {
+/* Custom Time Section */
+#custom-time {
+  margin-top: 20px;
+}
+
+#custom-time input {
   padding: 10px;
+  font-size: 16px;
+  width: 80px;
   margin-right: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px; /* Rounded input box */
-  width: calc(100% - 140px);
 }
 
-form button {
-  width: 100px;
+.hidden {
+  display: none; /* Hide by default */
 }
 
-/* Task List Styling */
-ul {
-  list-style: none;
-  padding: 0;
+#custom-time button {
+  background-color: #28a745;
+  color: #fff;
 }
 
-li {
-  padding: 10px;
-  margin: 5px 0;
-  background: #f9f9f9; /* Default task background */
-  border: 1px solid #ddd; /* Border for separation */
-  border-radius: 5px;
-}
-
-/* Timer Styling */
-#timer {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212; /* Andhera wala background */
-  color: #f4f4f9; /* Safed text for contrast */
-}
-
-header.dark-mode button {
-  background-color: #333; /* Dark button background */
-  color: #f4f4f9; /* White text for dark mode */
-}
-
-.container.dark-mode {
-  background: #1e1e1e; /* Dark container */
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow effect */
-}
-
-li.dark-mode {
-  background: #333; /* Dark mode task background */
-  color: #f4f4f9; /* Task text color for dark mode */
-}
-
-button.dark-mode {
-  background-color: #555; /* Button in dark mode */
-  color: #f4f4f9; /* White button text */
-}
-
-button.dark-mode:hover {
-  background-color: #777; /* Button hover in dark mode */
+#custom-time button:hover {
+  background-color: #218838;
 }
