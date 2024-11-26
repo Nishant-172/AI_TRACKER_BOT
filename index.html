@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer</title>
+  <title>Pomodoro Timer with Tasks</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,6 +23,19 @@
         <button id="set-time">Set Time</button>
       </div>
     </section>
+
+    <section class="tasks">
+      <h2>Your Tasks</h2>
+      <div>
+        <input type="text" id="task-input" placeholder="Add a new task..." />
+        <button id="add-task">Add Task</button>
+      </div>
+      <ul id="task-list">
+        <!-- Tasks will appear here -->
+      </ul>
+    </section>
+
+    <audio id="completion-sound" src="https://www.soundjay.com/button/beep-07.mp3"></audio> <!-- Timer Completion Sound -->
   </div>
   <script src="script.js"></script>
 </body>
