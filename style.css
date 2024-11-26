@@ -1,4 +1,78 @@
-/* Existing CSS remains unchanged */
+/* Reset styling for consistent look */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Font select kiya */
+  background-color: #f4f4f9; /* Default light mode background */
+  color: #333; /* Default light mode text color */
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; /* Default light mode container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light mode shadow */
+  border-radius: 8px; /* Rounded corners for modern UI */
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between; /* Header ke items alag alag corner pe */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Button rounded for a modern look */
+  background-color: #007bff; /* Default light mode button color */
+  color: #ffffff; /* White text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Input and Form Styling */
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Rounded input box */
+  width: calc(100% - 140px);
+}
+
+form button {
+  width: 100px;
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9; /* Default task background */
+  border: 1px solid #ddd; /* Border for separation */
+  border-radius: 5px;
+}
+
+/* Timer Styling */
+#timer {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212; /* Andhera wala background */
@@ -6,16 +80,25 @@ body.dark-mode {
 }
 
 header.dark-mode button {
-  background-color: #333; /* Dark button */
-  color: #f4f4f9;
+  background-color: #333; /* Dark button background */
+  color: #f4f4f9; /* White text for dark mode */
 }
 
 .container.dark-mode {
-  background: #1e1e1e; /* Andhera container color */
+  background: #1e1e1e; /* Dark container */
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow effect */
 }
 
-#task-list li.dark-mode {
-  background: #333; /* Task ka dark mode background */
-  color: #f4f4f9;
+li.dark-mode {
+  background: #333; /* Dark mode task background */
+  color: #f4f4f9; /* Task text color for dark mode */
+}
+
+button.dark-mode {
+  background-color: #555; /* Button in dark mode */
+  color: #f4f4f9; /* White button text */
+}
+
+button.dark-mode:hover {
+  background-color: #777; /* Button hover in dark mode */
 }
