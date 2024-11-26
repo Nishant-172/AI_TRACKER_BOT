@@ -66,3 +66,4 @@ function updateInsights() {
   const taskCount = taskList.children.length;
   insightsContent.innerHTML = `You have ${taskCount} task(s) left for today!`;
 }
+// js ends here
